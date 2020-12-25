@@ -98,6 +98,16 @@ def respond(voice_data):
     # 3: greeting
     if there_exists(["how are you","how are you doing"]):
         engine_speak("I'm very well, thanks for asking " + person_obj.name)
+        
+    if there_exists(["robi","roby","robbi"]):
+        engine_speak("Helo robi")
+        
+        
+    if there_exists(["valdo","paldo","stevanus"]):
+        engine_speak("Helo Valdo")
+        
+    if there_exists(["akbar","akbars","akbarrr"]):
+        engine_speak("Helo Akbar")
 
     # 4: time
     if there_exists(["what's the time","tell me the time","what time is it","what is the time"]):
@@ -250,7 +260,7 @@ time.sleep(1)
 
 person_obj = person()
 asis_obj = asis()
-asis_obj.name = 'kiki'
+asis_obj.name = 'kinda'
 person_obj.name = ""
 engine = pyttsx3.init()
 
